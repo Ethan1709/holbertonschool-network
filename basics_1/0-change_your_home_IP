@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 #bash script to change localhost and facebook ip adress
-sudo sed -i '' '/^127.0.0.1/ a\
-8.8.8.8         facebook.com\
-' /etc/hosts
+sudo sed -i.bak '/^127.0.0.1/ a\'$'\n''8.8.8.8         facebook.com\'$'\n'' ' /etc/hosts
+
