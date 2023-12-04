@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #bash script to change localhost and facebook ip adress
-sudo echo "127.0.0.2 localhost" >> /etc/hosts
-echo "8.8.8.8 facebook.com" >> /etc/hosts
+echo "127.0.0.2 localhost" | sudo tee -a /etc/hosts
+echo "8.8.8.8 facebook.com" | sudo tee -a /etc/hosts
